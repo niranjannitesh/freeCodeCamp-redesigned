@@ -1,0 +1,384 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    background: #f9f9f9;
+    color: #474747;
+}
+
+/* Main Styles */
+
+.button {
+    text-decoration: none;
+    font-size: 1.11rem;
+    color: #474747;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 15px 30px;
+    background: #ffe353;
+}
+
+h1,
+h2 {
+    font-weight: 400;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row .col {
+    width: 28%;
+    margin: 15px 35px 15px 0;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 4.5% 22px 4.5%;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #53cc42;
+}
+
+header .logo svg {
+    display: block;
+    width: 200px;
+}
+
+header .logo svg .a {
+    stroke: none;
+    fill:#707070;
+}
+
+header nav {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+header nav a {
+    margin-left: 35px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    color: #6f6f70;
+    transition: all .2s;
+}
+
+header nav a:hover {
+    color: #474747;
+}
+
+/* SECTION : INTRO */
+
+section.intro {
+    padding: 60px 4.5%;
+}
+
+section.intro h1 {
+    font-size: 2.3rem;
+    font-weight: 300;
+}
+
+section.intro .cards {
+    margin-top: 25px;
+}
+
+section.intro .cards .card {
+    text-align: center;
+    background: #fff;
+    padding: 40px 45px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 0px 0px #f2f2f2;
+    transition: all .1s ease-in;
+}
+
+section.intro .cards .card:hover {
+    box-shadow: 20px 20px 0px 0px #f2f2f2;
+}
+
+section.intro .cards .card:first-child img {
+    margin-bottom: 20px;
+}
+
+section.intro .cards .card img {
+    max-width: 100%;
+    width: 80px;
+}
+
+section.intro .cards .card p {
+    margin-top: 25px;
+    font-size: 1.1rem;
+    color: #6f6f70;
+}
+
+section.intro .button-line {
+    text-align: end;
+    margin: 35px 35px 20px 35px;
+    border-radius: 5px;
+}
+
+section.featured {
+    background: #fff;
+    padding: 60px 4.5%;
+}
+
+section.featured img {
+    display: block;
+    margin: 45px auto 0 auto;
+    max-width: 100%;
+}
+
+section.review {
+    padding: 60px 4.5%;
+}
+
+section.review .row {
+    padding: 50px 50px 0 50px;
+}
+
+section.review .row .col {
+    margin: 15px 0px 15px 35px;
+    text-align: center;
+}
+
+section.review .row .col img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+section.review .row .col p.name {
+    margin: 10px 0;
+    font-size: 1.11rem;
+}
+
+section.skills {
+    padding: 60px 4.5%;
+    background: #fff;
+}
+
+section.skills h2 {
+    text-align: center;
+}
+
+section.skills .icons.row {
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+section.skills .icons .col {
+    text-align: center;
+    width: 25%;
+    padding: 25px;
+    margin-right: 0;
+}
+
+section.skills .icons .col img {
+    width: 100px;
+}
+
+section.skills .icons .col p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 45px;
+}
+
+.footer .button.cto {
+    font-size: 1.3rem;
+}
+
+header .search-box {
+    width: 100%;
+    margin: 0 25px 0 40px;
+    box-shadow: 0px 0px 0px 1px #b3b3b3;
+    border-radius: 3px;
+    display: flex;
+    padding: 8px 5px;
+}
+
+header .search-box svg {
+    width: 20px;
+    height: 20px;
+}
+
+header .search-box input {
+    flex: 1;
+    outline: none;
+    color: #b3b3b3;
+    border: none;
+    margin-left: 10px;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+header .search-box input::-webkit-input-placeholder {
+    color: #b3b3b3;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 2% 10px 2%;
+    position: relative;
+    max-height: calc(100vh - 85px);
+}
+
+main section {
+    margin-left: 15px;
+    width: 33%;
+    max-height: 100%;
+}
+
+main .details,
+main .editor .code,
+main .editor .output,
+main .preview {
+    background: #fff;
+    overflow-y: auto;
+}
+
+main section.details {
+    padding: 15px 20px;
+}
+
+main section.details hr {
+    margin-top: 15px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgba(165, 165, 165, 0.75), rgba(0, 0, 0, 0));
+}
+
+main section.details p {
+    margin: 25px 0;
+}
+
+main section.details code {
+    color: #af80f5;
+    font-family: monospace;
+}
+
+main .editor .code {
+    height: 68%;
+    font-family: monospace;
+    padding: 10px 15px;
+    color: #75767b;
+}
+
+main .editor .code p span.no {
+    padding: 2px 5px 2px 15px;
+}
+
+main .editor .code p {
+    font-size: 14px;
+}
+
+main .editor .code p.active,
+main .editor .output p.active {
+    background: #fbfbfb;
+}
+
+main .editor .code p span.line {
+    padding: 2px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+main .editor .code p code {
+    color: #ea7f76;
+}
+
+main .editor .output {
+    height: 28%;
+    font-size: 14px;
+    margin-top: 4%;
+    font-family: monospace;
+    padding: 10px;
+    color: #abacb1;
+}
+
+main .preview {
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        justify-content: space-between;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    header nav a {
+        margin-left: 0;
+    }
+
+    section.intro .button-line {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row .col {
+        width: 80%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    section.review .row .col {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    section.skills .icons .col {
+        width: 80%;
+    }
+}
